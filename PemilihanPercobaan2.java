@@ -15,7 +15,19 @@ class PemilihanPercobaan2  {
 
         float total = (UAS * 0.4F) + (UTS * 0.3F) + (Kuis * 0.1F) + (Tugas * 0.2F);
 
-        String message = total < 65 ? "Remidi"  : "Tidak Remidi";
-        System.out.println("Nilai akhir = " + total + " sehingga " + message );
+        if (total > 80)
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan A ");
+        else if (total > 73)
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan B+");
+        else if (total > 65)
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan B");
+        else if (total > 60)
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan C+");
+        else if (total > 50)
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan C");
+        else if (total > 39)
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan D");
+        else
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan E");
     }
 }
